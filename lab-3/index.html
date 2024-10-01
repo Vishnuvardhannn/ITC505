@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Worst Font Ever</title>
+    <style>
+        /* Define the worst font */
+        @font-face {
+            font-family: 'WorstFontEver';
+            src: url('fonts/comic-sans-ms.woff2') format('woff2'),
+                 url('fonts/comic-sans-ms.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        /* Apply the font to the body */
+        body {
+            font-family: 'WorstFontEver', sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d6336c;
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Comic Sans: </h1>
+    <p></p>
+    
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
