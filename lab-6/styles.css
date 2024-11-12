@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #800000; /* Maroon */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Container for the layout */
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #800000; /* Maroon */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #800000; /* Maroon */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #660000;
+}
+
+/* Advertisement Section */
+.advertisement {
+    text-align: center;
+}
+
+.advertisement img {
+    width: 100%; /* Maintain original image size without scaling */
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0;
+}

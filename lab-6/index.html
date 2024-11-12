@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Webpage</h1>
+        <p>"Creativity is intelligence having fun." – Albert Einstein</p>
+    </header>
+
+    <div class="container">
+        <!-- Menu Sidebar -->
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <h2>Interactive JavaScript Section</h2>
+            <p id="arrayDisplay">Unsorted Numbers: 8, 3, 5, 1, 4</p>
+            <button id="sortButton">Sort Numbers</button>
+            <p id="result"></p>
+        </main>
+
+        <!-- Advertisement Section (iPhone 16 Pro Max) -->
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=675149237887&hvpos=&hvnetw=g&hvrand=4068482468867197405&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030289&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_14649097" target="_blank">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTgW3iraGXB2qiMewWwqr-5yit1MAuvoAMYLJL0qK0lKqypfcP4W24tDg-R1IgDmr5RNg8PPzqxjdSxD9dYCY3pB0Vgg_SXrTm9Xs47VD4q9q2p3K4IYp7ikw" alt="iPhone 16 Pro Max" style="width: 100%; height: auto;" />
+            </a>
+        </aside>
+    </div>
+
+    <!-- Footer with Last Updated Time -->
+    
+
+    <!-- Addendum Section at the End -->
+    <div class="addendum">
+        <h3>Addendum</h3>
+        <p>
+            In this assignment, I implemented a JavaScript function to sort an array of numbers when a button is clicked. 
+            Initially, the numbers are displayed unsorted. After clicking the "Sort Numbers" button, the array is sorted and shown. 
+            I faced some difficulty in organizing the content layout using CSS grid but solved it by referring to resources.
+            Additionally, an advertisement for the iPhone 16 Pro Max is added, linking to an Amazon product page.
+        </p>
+
+        <footer>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        // Display the last updated date
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+
+        // JavaScript for sorting numbers
+        let numbers = [8, 3, 5, 1, 4];
+
+        document.getElementById('sortButton').onclick = function() {
+            numbers.sort((a, b) => a - b);  // Sort numbers in ascending order
+            document.getElementById('result').textContent = 'Sorted Numbers: ' + numbers.join(', ');
+            document.getElementById('arrayDisplay').textContent = 'Sorted Numbers: ' + numbers.join(', ');
+        };
+    </script>
+</body>
+</html>
