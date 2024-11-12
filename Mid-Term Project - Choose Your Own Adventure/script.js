@@ -10,7 +10,7 @@ const story = {
         text: "You see an alien village. Do you approach the aliens or observe from a distance?",
         choices: ["Approach Aliens", "Observe from Distance"],
         consequence: ["approachAliens", "observeFromDistance"],
-        image: "images/planet.jpeg",
+        image: "planet.jpeg",
     },
     stayNearShip: {
         text: "You receive a distress signal from another part of the planet. Do you investigate or stay put?",
