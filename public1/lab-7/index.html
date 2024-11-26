@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mad Libs Generator</h1>
+        </header>
+        <main>
+            <div id="form-container">
+                <p>Fill in the blanks below to create your story!</p>
+                <form id="madLibForm">
+                    <label for="noun1">Enter a Noun:</label>
+                    <input type="text" id="noun1" name="noun1" required><br>
+
+                    <label for="adjective1">Enter an Adjective:</label>
+                    <input type="text" id="adjective1" name="adjective1" required><br>
+
+                    <label for="verb1">Enter a Verb:</label>
+                    <input type="text" id="verb1" name="verb1" required><br>
+
+                    <label for="place1">Enter a Place:</label>
+                    <input type="text" id="place1" name="place1" required><br>
+
+                    <button type="button" id="submitBtn">Go!</button>
+                </form>
+            </div>
+
+            <div id="story-container" style="display: none;">
+                <h2>Your Mad Libs Story</h2>
+                <p id="storyText"></p>
+                <button id="restartBtn">Create Another!</button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p>ADDENDUM: This Mad Libs Generator is designed to create fun and random stories by filling in the blanks with various types of words. Enjoy making your unique stories!</p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
